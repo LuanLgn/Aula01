@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/BootstrapV4/css/bootstrap.min.css" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- Estilo customizado-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/101b04dc04.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Api</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h1>Consulta de CEP</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="cepInput"
+            placeholder="Digite o CEP (apenas números)"
+          />
+        </div>
+        <div class="col-md-3">
+          <button id="searchBtn" class="btn btn-primary btn-block">
+            Buscar
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-6 mt-3">
+          <div id="cepInfo"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center mt-5">
+        <button
+          id="mostrarHTML"
+          class="btn btn-info"
+          onclick="mostrarConteudoHTML()"
+        >
+          Explicação
+        </button>
+      </div>
+      <div id="conteudoHTML" style="display: none">
+        <!-- Aqui você pode inserir o HTML que deseja mostrar -->
+        <h1 class="mt-5">Explicação API</h1>
+        <div class="d-flex align-items-center justify-content-center">
+          <p>
+            O que o código faz: Aguarda você clicar no botão "Buscar". Quando
+            você clica, ele pega o CEP que você inseriu.<br />
+            Com esse CEP, ele acessa a API
+            <strong>https://brasilapi.com.br/api/cep/v1/{seu cep aqui} </strong>
+            que fornece informações sobre CEPs no Brasil. <br />
+            Essa API retorna as informações relacionadas ao CEP que você
+            digitou, como cidade, estado, bairro e rua. <br />
+            O código então mostra essas informações na página para você. <br />
+            Pra curiosidade você pode pegar esse link
+            <strong>https://brasilapi.com.br/api/cep/v1/{seu cep aqui} </strong>
+            <br />
+            com o seu cep e colocar no google, que aparecerá um json da API.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script File -->
+    <script src="/assets/js/fileApi.js"></script>
+    <script src="/assets/BootstrapV4/js/bootstrap.min.js"></script>
+  </body>
+</html>

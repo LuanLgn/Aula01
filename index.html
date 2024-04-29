@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/BootstrapV4/css/bootstrap.min.css" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- Estilo customizado-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/101b04dc04.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Aula 1</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Escolha uma opção</h1>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <a href="api.html" class="btn btn-primary btn-block">API</a>
+        </div>
+        <div class="col-md-6">
+          <a href="webhook.html" class="btn btn-info btn-block">Webhook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center mt-5">
+        <button
+          id="mostrarHTML"
+          class="btn btn-success"
+          onclick="mostrarConteudoHTML()"
+        >
+          Diferença de API e Webhook
+        </button>
+      </div>
+      <div id="conteudoHTML" style="display: none">
+        <!-- Aqui você pode inserir o HTML que deseja mostrar -->
+      
+            <h1 class="mt-5">Diferença API e Webhook</h1>
+            <div class="d-flex align-items-center justify-content-center">
+              <p>
+                <strong>API (Interface de Programação de Aplicativos):</strong> É
+                como uma receita de bolo que diz para um computador como fazer algo
+                específico, como obter informações de um site ou enviar uma mensagem
+                para um amigo. <br />
+                Você precisa mandar algo, pra ele te retornar uma informação sobre o
+                dado que você enviou <br />
+                <strong
+                  >(como foi visto no exemplo da API, aonde você mandou o cep e
+                  retornou com as informações da rua, cidade e estado).</strong
+                >
+                <br />
+                <strong>Webhook:</strong> É como quando você deixa um recado na
+                porta de um amigo dizendo "me avise quando você chegar em casa".
+                <br />
+                Seu amigo não precisa ligar para você para dizer que chegou em casa,
+                ele apenas te avisa quando chegar. O webhook faz algo parecido, mas
+                entre computadores.<br />
+                Um sistema diz para outro: "me avise quando algo importante
+                acontecer", e quando acontece, o outro sistema avisa
+                automaticamente, sem precisar ser perguntado. <br />
+                <strong
+                  >(como foi feito no exemplo do webhook, quando o contador chega a 10 o site te
+                  notifica que o webhook foi ativado).</strong
+                >
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script File -->
+    <script src="/assets/js/file.js"></script>
+    <script src="/assets/BootstrapV4/js/bootstrap.min.js"></script>
+  </body>
+</html>
